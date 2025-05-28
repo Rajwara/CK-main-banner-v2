@@ -138,11 +138,10 @@
             display: inline-block;
             /* Ensure tabs are inline for horizontal scrolling */
         }
-        
-        .tabs-nav li.active span {
-            border-bottom: 2px solid #FB497D;
-            padding-bottom: 29px;
-        }
+        /*.tabs-nav li.active span {
+                border-bottom: 2px solid #FB497D;
+                padding-bottom: 29px;
+            }*/
         
         .glyphicon-chevron-left:before {
             content: "\e079"
@@ -369,7 +368,7 @@
         #custom_carousel .item {
             color: #000;
             /*background-image: linear-gradient(90deg, rgba(253, 105, 132, 0.08) 0%, rgba(247, 158, 129, 0.08) 100%);
-            */
+                */
             padding: 0px;
             background: #fff5f4;
             height: 65vh;
@@ -385,9 +384,17 @@
             white-space: nowrap;
             text-align: center;
             position: relative;
-            background: #faccbd;
             padding-top: 10px;
             padding-bottom: 10px;
+            width: 100%;
+            margin: 0px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            fill: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 60px;
+            margin-top: -170px;
+            max-width: 1780px;
+            margin-bottom: 40px;
         }
         
         #custom_carousel .controls li {
@@ -409,13 +416,13 @@
         }
         
         ul.tabs-nav li:not(:last-child) {
-            border-right: 1px solid white;
+            border-right: 1px solid #D3BDBB;
         }
         
         #custom_carousel .controls li.active {
-            background-color: #faccbd;
+            background-color: #fff;
             /*border-bottom: 2px solid #FB497D;
-            */
+                */
             color: #FB497D !important;
         }
         
@@ -425,15 +432,15 @@
             margin-top: 5px;
             font-weight: bold
         }
-        
-        .tab-slider-slides-wrapper {
-            display: flex !important;
-            align-content: space-between;
-            align-items: center;
-            justify-content: center;
-            text-align: left !important;
-            height: 65vh;
-        }
+        /*    .tab-slider-slides-wrapper {
+                display: flex !important;
+                align-content: space-between;
+                align-items: center;
+                justify-content: center;
+                text-align: left !important;
+                height: 65vh;
+            }
+            */
         
         .tab-slider-content-div {
             margin: 30px !important;
@@ -446,21 +453,20 @@
         
         .tab-slider-slides-wrapper .tab-slider-content-div .tab-slider-content-div-head {
             font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 4.5rem;
+            font-weight: 700;
+            line-height: 5.5rem;
             font-family: "Playfair Display";
             color: #000;
-            text-align: left;
-            margin-bottom: 30px;
         }
         
         .tab-slider-slides-wrapper .tab-slider-content-div .tab-slider-content-div-para {
-            font-family: "Playfair Display";
+            font-family: "Poppins", sans-serif;
             color: #000;
-            text-align: left;
+            /* text-align: left;
+                */
             line-height: 2rem;
             font-weight: 400;
-            font-size: 1.1rem;
+            font-size: 1.75rem;
         }
         
         .center-text {
@@ -491,15 +497,17 @@
         img.glyphicon.glyphicon-chevron-lef {
             cursor: pointer;
             position: absolute;
-            left: 10px;
+            left: 2%;
             top: 35%;
+            width: 25px;
         }
         
         img.glyphicon.glyphicon-chevron-right {
             cursor: pointer;
             position: absolute;
             top: 35%;
-            right: 10px;
+            right: 2%;
+            width: 25px;
         }
         
         .app-redirection-link-img {
@@ -541,7 +549,7 @@
             img.glyphicon.glyphicon-chevron-right {
                 margin-right: 0px !important;
                 /*  width: 15px;
-            */
+                */
                 position: absolute;
                 top: 35%;
                 right: 10px;
@@ -659,18 +667,18 @@
                 width: 100%;
                 margin: 0px auto;
             }
-            .tabs-nav li.active span {
-                padding-bottom: 10px;
-                display: block;
-                align-items: center !important;
-                text-align: center !important;
-                justify-content: center !important;
-                width: 100% !important;
-                margin: 0px auto;
-            }
-            .tabs-nav li span {
-                display: none;
-            }
+            /*   .tabs-nav li.active span {
+                    padding-bottom: 10px;
+                    display: block;
+                    align-items: center !important;
+                    text-align: center !important;
+                    justify-content: center !important;
+                    width: 100% !important;
+                    margin: 0px auto;
+                }
+                .tabs-nav li span {
+                    display: none;
+                }*/
             #custom_carousel .controls li {
                 width: 100%;
                 max-width: 100%;
@@ -1041,6 +1049,236 @@
                 border-right: none !important;
             }
         }
+        /*v2page styling started */
+        
+        .tab-slider-content-div.first-slide h3 {
+            font-size: 1.75rem;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+            color: #000;
+            margin-top: 15px;
+        }
+        
+        .tab-slider-content-div.first-slide p {
+            text-align: center;
+        }
+        
+        .tab-slider-content-div-btn {
+            color: #FB497D;
+            font-weight: 600;
+            font-family: graphik;
+            background-color: #fff;
+            border: 1px solid #FB497D;
+            padding: 15px 25px 15px 25px;
+            border-radius: 60px !important;
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+        
+        .tab-slider-slides-wrapper.first-slide-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Horizontal center */
+            justify-content: start;
+            /* Vertical center (if needed) */
+            text-align: center;
+            /* Center text inside elements */
+            height: 100%;
+            /* Optional: for vertical centering */
+        }
+        
+        .tab-slider-slides-wrapper.second-slide-wrapper {
+            display: flex;
+            padding-top: 25px;
+            flex-direction: row;
+            align-items: start;
+            /* Horizontal center */
+            /* Vertical center (if needed) */
+            text-align: center;
+            /* Center text inside elements */
+            height: 100%;
+            /* Optional: for vertical centering */
+            max-width: 1780px;
+            width: 100%;
+            margin: 0px auto;
+        }
+        
+        .tab-slider-slides-wrapper.third-slide-wrapper {
+            display: flex;
+            padding-top: 25px;
+            flex-direction: row;
+            align-items: start;
+            /* Horizontal center */
+            /* Vertical center (if needed) */
+            text-align: center;
+            /* Center text inside elements */
+            height: 100%;
+            /* Optional: for vertical centering */
+            max-width: 1780px;
+            width: 100%;
+            margin: 0px auto;
+        }
+        
+        .tab-slider-slides-wrapper.forth-slide-wrapper {
+            display: flex;
+            padding-top: 25px;
+            flex-direction: row;
+            align-items: start;
+            /* Horizontal center */
+            /* Vertical center (if needed) */
+            text-align: center;
+            /* Center text inside elements */
+            height: 100%;
+            /* Optional: for vertical centering */
+            max-width: 1780px;
+            width: 100%;
+            margin: 0px auto;
+        }
+        
+        .gradient-border {
+            position: relative;
+            border-radius: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 0px;
+            z-index: 0;
+            margin: 7px;
+            border: 0px !important;
+        }
+        
+        .gradient-border::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2px;
+            /* Border thickness */
+            background: linear-gradient(to right, #48B0DD 0%, #FB497D 100%);
+            border-radius: 40px;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .gradient-border>* {
+            border-radius: 8px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .flex-class {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .first-slide-wrapper .first-slide .tab-slider-content-div-para {
+            margin-top: 10px;
+            margin-bottom: 20px !important;
+        }
+        
+        .first-slide-wrapper .first-slide .tab-slider-content-div-btn {
+            margin-bottom: 20px;
+        }
+        
+        .tab-slider-slides-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            /* or a specific value like 100vh if needed */
+        }
+        
+        .item,
+        .tab-slider-single-slide-wrapper {
+            height: 100vh;
+        }
+        
+        .gradient-border {
+            text-align: center;
+        }
+        
+        .first-slide-wrapper .first-slide h2 {
+            font-size: 5.5rem !important;
+            line-height: 7.5rem !important;
+        }
+        
+        .tab-slider-content-div.second-slide h2 {
+            font-size: 5.5rem !important;
+            line-height: 5.5rem !important;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .tab-slider-content-div.third-slide h2 {
+            font-size: 5.5rem !important;
+            line-height: 5.5rem !important;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .tab-slider-content-div.second-slide h3 {
+            color: #000;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        .tab-slider-content-div.third-slide h3 {
+            color: #000;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        .tab-slider-content-div.second-slide p.tab-slider-content-div-para {
+            margin-bottom: 30px;
+            margin-top: 25px;
+            width: 75%;
+            line-height: 2.3rem !important;
+        }
+        
+        .tab-slider-content-div.first-slide.gradient-border {
+            max-height: 360px;
+            max-width: 1246px;
+            width: 100%;
+        }
+        
+        .tab-slider-content-div.second-slide.gradient-border {
+            max-height: 580px;
+            max-width: 760px;
+            width: 100%;
+            padding: 20px 35px 20px 35px;
+            text-align: left;
+        }
+        
+        .item .tab-slider-single-slide-wrapper .second-slide-wrapper .tab-slider-img-div img {
+            width: 85%;
+            height: fit-content;
+        }
+        /* .item .tab-slider-single-slide-wrapper .third-slide-wrapper .tab-slider-img-div img {
+            width: 85%;
+            height: fit-content;
+            text-align: center;
+        }
+        
+        */
+        
+        .item .tab-slider-single-slide-wrapper .third-slide-wrapper .tab-slider-img-div {
+            text-align: center;
+        }
+        
+        .item .tab-slider-single-slide-wrapper .third-slide-wrapper .tab-slider-img-div img {
+            display: inline-block;
+            /* important for text-align to work */
+        }
+        
+        .tab-slider-content-div.third-slide.gradient-border {
+            max-height: 610px;
+            max-width: 995px;
+            width: 100%;
+            padding: 30px 35px 30px 35px;
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -1054,62 +1292,72 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="tab-slider-single-slide-wrapper">
-                                    <div class=" tab-slider-slides-wrapper">
-                                        <div class="tab-slider-content-div">
-                                            <h2 class="tab-slider-content-div-head">Welcome to Color Kahar <br> Your <span style="color: #FB497D;">  Premium Online  </span>Photo Printing App</h2>
-                                            <p class="tab-slider-content-div-para">Create Amazing Photo Albums, Prints, and More, All from Your Phone! 📸✨</p>
-                                            <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
-                                                    alt="">
-                                            </div>
+                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/HeroImage1-without-backdrop.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                    <div class="tab-slider-slides-wrapper first-slide-wrapper">
+                                        <div class="tab-slider-content-div first-slide gradient-border" style="border: 2px solid ;">
+                                            <h3>Bring Your <span style="font-weight:600;">Moments to Life!</span></h3>
+                                            <h2 class="tab-slider-content-div-head">Themed <span style="color: #FB497D;"> Photobooks </span></h2>
+                                            <p class="tab-slider-content-div-para">With Color Kahar you can design photo books, magnets,<br> mugs and more - all from your phone!</p>
+                                            <button class="tab-slider-content-div-btn">View More Products</button>
+                                            <!-- <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
+                                                        alt="">
+                                                </div> -->
                                         </div>
-                                        <div class="tab-slider-img-div"><img style="width: 100%; height:fit-content;" src="https://dev.colorkahar.com/wp-content/uploads/2024/01/retro-feature-size-01.webp" class=""></div>
+                                        <div class="tab-slider-img-div"><img style="width: 100%; height:fit-content;" src="https://dev.colorkahar.com/wp-content/uploads/2025/05/themebook.png" class=""></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item ">
-                                <div class="tab-slider-single-slide-wrapper">
-                                    <div class=" tab-slider-slides-wrapper">
-                                        <div class="tab-slider-content-div">
-                                            <h2 class="tab-slider-content-div-head">Explore Our Range of <span style="color: #FB497D;">  Photo  </span>Products</h2>
-                                            <p class="tab-slider-content-div-para">Discover Expertly Designed Themed Photobooks, Retro Prints, Mugs, and More - Personalize It Your Way! 📚🎨</p>
-                                            <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="tab-slider-img-div"><img style="width: 100%; height:fit-content;" src="https://dev.colorkahar.com/wp-content/uploads/2024/01/retro-feature-size-01.webp" class=""></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item ">
-                                <div class="tab-slider-single-slide-wrapper">
-                                    <div class=" tab-slider-slides-wrapper">
-                                        <div class="tab-slider-content-div">
-                                            <h2 class="tab-slider-content-div-head">Join Our Tree : <span style="color: #FB497D;"> Planting </span>Mission </h2>
-                                            <p class="tab-slider-content-div-para">Making a Wall Calendar or a Color Tile? You're Also Planting Trees! Let's Make Pakistan Greener Together! 🌳🌍</p>
-                                            <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="tab-slider-img-div"><img style="width: 100%; height:fit-content;" src="https://dev.colorkahar.com/wp-content/uploads/2024/01/retro-feature-size-01.webp" class=""></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item ">
-                                <div class="tab-slider-single-slide-wrapper">
-                                    <div class=" tab-slider-slides-wrapper">
-                                        <div class="tab-slider-content-div">
-                                            <h2 class="tab-slider-content-div-head">Grab Our <span style="color: #FB497D;"> Latest </span>Deals </h2>
-                                            <p class="tab-slider-content-div-para">Who doesn't love discounts? Explore our latest promotions and keep an eye out for exciting new offers! 💰🎉</p>
-                                            <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="tab-slider-img-div"><img style="width: 100%; height:fit-content;" src="https://dev.colorkahar.com/wp-content/uploads/2024/01/retro-feature-size-01.webp" class=""></div>
-                                    </div>
-                                </div>
-                            </div>
+                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG2.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                    <div class=" tab-slider-slides-wrapper flex-class second-slide-wrapper">
+                                        <div class="tab-slider-content-div second-slide gradient-border">
+                                            <h3>Let your <span style="font-weight:600;">happiest memories</span></h3>
+                                            <h2 class="tab-slider-content-div-head">Live On <br>Your <span style="color: #FB497D;">  Walls  </span></h2>
+                                            <p class="tab-slider-content-div-para">Create a vibrant mosaic of life with beautifully personalized Color Kahar <span style="font-weight:600;">Photo Tiles.</span></p>
+                                            <!-- <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
+                                                        alt="">
+                                                </div> -->
+                                            <button class="tab-slider-content-div-btn">View More Products</button>
 
+                                        </div>
+                                        <div class="tab-slider-img-div"><img style=" height:fit-content;" src="https://dev.colorkahar.com/wp-content/uploads/2025/05/frames-1.png" class=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG3.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                    <div class=" tab-slider-slides-wrapper flex-class third-slide-wrapper">
+                                        <div class="tab-slider-content-div third-slide gradient-border">
+                                            <h3>Brighten your days with</h3>
+                                            <h2 class="tab-slider-content-div-head">Personalized <br>Photo<span style="color: #FB497D;"><br>  Calendars  </span></h2>
+                                            <p class="tab-slider-content-div-para">Crafted to celebrate your moments all year round.</p>
+                                            <!-- <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
+                                                        alt="">
+                                                </div> -->
+                                            <button class="tab-slider-content-div-btn">View More Products</button>
+
+                                        </div>
+                                        <div class="tab-slider-img-div"><img style="" src="https://dev.colorkahar.com/wp-content/uploads/2025/05/Calendar.png" class=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG4.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                    <div class=" tab-slider-slides-wrapper flex-class forth-slide-wrapper">
+                                        <div class="tab-slider-content-div forth-slide">
+                                            <h3>All your <span style="font-weight:600;"> Favorite Moments</span></h3>
+                                            <h2 class="tab-slider-content-div-head">Beautifully<span style="color: #FB497D;">  Printed  </span></h2>
+                                            <p class="tab-slider-content-div-para">From photobooks and retro prints to mugs, magnets, calendars, and tiles — create and customize the memories that make you smile, every single day.</p>
+                                            <!-- <div class="app-redirection-link-img-wrapper"><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155028.webp" alt=""><img class="app-redirection-link-img" src="https://dev.colorkahar.com/wp-content/uploads/2023/08/Group-1261155027.webp"
+                                                        alt="">
+                                                </div> -->
+                                            <button class="tab-slider-content-div-btn">Explore All Products</button>
+
+                                        </div>
+                                        <div class="tab-slider-img-div"><img style="width: 100%; height:fit-content;" src="https://dev.colorkahar.com/wp-content/uploads/2025/05/gifts.png" class=""></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
 
@@ -1117,34 +1365,34 @@
 
                         <div class="controls">
                             <span>
-                            <a class="left carousel-control" role="button" data-slide="prev">
-                                <img class="glyphicon glyphicon-chevron-lef" src="https://dev.colorkahar.com/wp-content/uploads/2025/01/tab-slider-left-arrow.png.png" alt="Previous">
-                            </a>
-                            </span>
+                                <a class="left carousel-control" role="button" data-slide="prev">
+                                    <img class="glyphicon glyphicon-chevron-lef" src="https://dev.colorkahar.com/wp-content/uploads/2025/05/Left-arrow.png" alt="Previous">
+                                </a>
+                                </span>
                             <ul class="tabs-nav">
 
                                 <li data-target="#custom_carousel" data-slide-to="0" class="active">
-                                    <span class=" text-center" style="max-width: fit-content;"> Welcome to Color Kahar💍✈️ </span>
+                                    <span class=" text-center" style="max-width: fit-content;"> Wedding & Travel Expo💍✈️ <br> Up to 90% OFF + FREE* Canvas Prints</span>
                                 </li>
                                 <li data-target="#custom_carousel" data-slide-to="1">
-                                    <span class="text-center" style="max-width: fit-content;"> Explore Photo Products 📚🎨</span>
+                                    <span class="text-center" style="max-width: fit-content;"> Mid Autumn Sale <br> Up to 65% OFF + Extra 33% Off Sitewide</span>
                                 </li>
                                 <li data-target="#custom_carousel" data-slide-to="2">
-                                    <span class=" text-center" style="max-width: fit-content;">Join Our Tree 🌳🌍</span>
+                                    <span class=" text-center" style="max-width: fit-content;">Wedding Must-Haves! 💖 <br> Up to 65% OFF + Free* Shipping</span>
                                 </li>
                                 <li data-target="#custom_carousel" data-slide-to="3">
-                                    <span class=" text-center" style="max-width: fit-content;">Grab Our Latest Deals 💰🎉</span>
+                                    <span class=" text-center" style="max-width: fit-content;">Travel Frenzy Sale ✈️<br> Up to 70% OFF</span>
                                     <!-- <li data-target="#custom_carousel" data-slide-to="4">
-                                        <a href="#"><img src="http://placemi.com/bbqez/230x220"><small>wexi</small></a>
-                                    </li> -->
+                                            <a href="#"><img src="http://placemi.com/bbqez/230x220"><small>wexi</small></a>
+                                        </li> -->
                                 </li>
                             </ul>
                             <span>
-                            <a class="right carousel-control" role="button" data-slide="next">
-                                <img class="glyphicon glyphicon-chevron-right" src="https://dev.colorkahar.com/wp-content/uploads/2025/01/tab-slider-right-arrow.png" alt="Next">
+                                <a class="right carousel-control" role="button" data-slide="next">
+                                    <img class="glyphicon glyphicon-chevron-right" src="https://dev.colorkahar.com/wp-content/uploads/2025/05/Right-Arrow.png" alt="Next">
 
-                            </a>
-                        </span>
+                                </a>
+                            </span>
                         </div>
                     </div>
                     <!-- End Carousel -->
