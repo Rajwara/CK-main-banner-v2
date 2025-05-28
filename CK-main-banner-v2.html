@@ -377,6 +377,7 @@
         }
         
         #custom_carousel .controls {
+            max-height: 123px;
             overflow-x: auto;
             overflow-y: hidden;
             padding: 0;
@@ -420,7 +421,7 @@
         }
         
         #custom_carousel .controls li.active {
-            background-color: #fff;
+            background-color: transparent;
             /*border-bottom: 2px solid #FB497D;
                 */
             color: #FB497D !important;
@@ -646,7 +647,7 @@
                 display: none;
             }
             #custom_carousel .controls li.active {
-                background-color: #faccbd;
+                background-color: transparent;
                 color: #FB497D !important;
                 display: block;
                 width: 70%;
@@ -687,7 +688,7 @@
                 display: none;
             }
             #custom_carousel .controls li.active {
-                background-color: #faccbd;
+                background-color: transparent;
                 color: #FB497D !important;
                 display: block;
                 width: 70%;
@@ -777,7 +778,7 @@
                 display: none;
             }
             #custom_carousel .controls li.active {
-                background-color: #faccbd;
+                background-color: transparent;
                 color: #FB497D !important;
                 display: block;
                 width: 70%;
@@ -818,7 +819,8 @@
                 font-size: 2.5rem !important;
                 line-height: 3rem !important;
                 text-align: center;
-                margin-bottom: 30px !important;
+                /*   margin-bottom: 30px !important;
+                */
             }
             .tab-slider-slides-wrapper .tab-slider-content-div .tab-slider-content-div-para {
                 text-align: center;
@@ -888,7 +890,7 @@
                 display: none;
             }
             #custom_carousel .controls li.active {
-                background-color: #faccbd;
+                background-color: transparent;
                 color: #FB497D !important;
                 display: block;
                 width: 70%;
@@ -977,7 +979,7 @@
                 display: none;
             }
             #custom_carousel .controls li.active {
-                background-color: #faccbd;
+                background-color: transparent;
                 color: #FB497D !important;
                 display: block;
                 width: 70%;
@@ -1319,6 +1321,125 @@
         .tab-slider-single-slide-wrapper {
             max-height: 890px;
         }
+        
+        .first-slide-bg-img {
+            background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/HeroImage1-without-backdrop.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 5px;
+        }
+        
+        .second-slide-bg-img {
+            background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 5px;
+        }
+        
+        .third-slide-bg-img {
+            background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 5px;
+        }
+        
+        .forth-slide-bg-img {
+            background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            /* Your styles here */
+            .first-slide-wrapper .first-slide .tab-slider-content-div-para,
+            .second-slide-wrapper .second-slide .tab-slider-content-div-para,
+            .forth-slide-wrapper .forth-slide .tab-slider-content-div-para {
+                line-height: 1.6rem;
+                font-size: 1.5rem;
+            }
+            .third-slide-wrapper .third-slide .tab-slider-content-div-para {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            .first-slide-wrapper .first-slide h2 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .tab-slider-content-div.first-slide.gradient-border {
+                padding: 5px;
+                /* padding-bottom: 0px; */
+                margin-top: 20px !important;
+                margin-bottom: 20px !important;
+            }
+            #custom_carousel .controls {
+                max-height: 80px;
+                margin-top: -85px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tab-slider-slides-wrapper.second-slide-wrapper {
+                padding-top: 0px;
+            }
+            .tab-slider-content-div.second-slide.gradient-border,
+            .tab-slider-content-div.third-slide h3,
+            .tab-slider-content-div.forth-slide h3 {
+                text-align: center;
+            }
+            .tab-slider-content-div.second-slide h2 {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .tab-slider-content-div.second-slide.gradient-border,
+            .tab-slider-content-div.third-slide.gradient-border,
+            .tab-slider-content-div.forth-slide.gradient-border {
+                padding: 10px 10px 10px 10px;
+                margin-top: 10px !important;
+                margin-bottom: 10px !important;
+            }
+            .tab-slider-content-div-btn {
+                margin-bottom: 15px;
+            }
+            .tab-slider-content-div.second-slide p.tab-slider-content-div-para {
+                max-width: 100%;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            .tab-slider-content-div.third-slide.gradient-border,
+            .tab-slider-content-div.forth-slide.gradient-border {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            .tab-slider-single-slide-wrapper.third-slide-bg-img .tab-slider-slides-wrapper.third-slide-wrapper .tab-slider-img-div img {
+                width: 60%;
+                display: block;
+                /* required for margin auto to work */
+                margin: 0 auto;
+            }
+            .tab-slider-content-div.forth-slide p.tab-slider-content-div-para {
+                max-width: 100%;
+            }
+            .tab-slider-content-div.forth-slide.gradient-border {
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+            }
+            .tab-slider-slides-wrapper.forth-slide-wrapper {
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                height: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -1332,7 +1453,7 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/HeroImage1-without-backdrop.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                <div class="tab-slider-single-slide-wrapper first-slide-bg-img">
                                     <div class="tab-slider-slides-wrapper first-slide-wrapper">
                                         <div class="tab-slider-content-div first-slide gradient-border" style="border: 2px solid ;">
                                             <h3>Bring Your <span style="font-weight:600;">Moments to Life!</span></h3>
@@ -1348,7 +1469,7 @@
                                 </div>
                             </div>
                             <div class="item ">
-                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG2.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                <div class="tab-slider-single-slide-wrapper second-slide-bg-img">
                                     <div class=" tab-slider-slides-wrapper flex-class second-slide-wrapper">
                                         <div class="tab-slider-content-div second-slide gradient-border">
                                             <h3>Let your <span style="font-weight:600;">happiest memories</span></h3>
@@ -1365,7 +1486,7 @@
                                 </div>
                             </div>
                             <div class="item ">
-                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG3.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                <div class="tab-slider-single-slide-wrapper third-slide-bg-img">
                                     <div class=" tab-slider-slides-wrapper flex-class third-slide-wrapper">
                                         <div class="tab-slider-content-div third-slide gradient-border">
                                             <h3>Brighten your days with</h3>
@@ -1382,7 +1503,7 @@
                                 </div>
                             </div>
                             <div class="item ">
-                                <div class="tab-slider-single-slide-wrapper" style="background-image: url('https://dev.colorkahar.com/wp-content/uploads/2025/05/BG4.jpg');background-size: 100%;background-position: center;background-repeat: no-repeat;">
+                                <div class="tab-slider-single-slide-wrapper forth-slide-bg-img">
                                     <div class=" tab-slider-slides-wrapper flex-class forth-slide-wrapper">
                                         <div class="tab-slider-content-div forth-slide gradient-border">
                                             <h3>All your <span style="font-weight:600;"> Favorite Moments</span></h3>
