@@ -387,7 +387,7 @@
             position: relative;
             padding-top: 10px;
             padding-bottom: 10px;
-            width: 100%;
+            width: 95%;
             margin: 0px auto;
             background-color: rgba(255, 255, 255, 0.8);
             fill: #fff;
@@ -558,35 +558,27 @@
             .carousel-control {}
         }
         
-        @media screen and (min-width:1250px) and (max-width:1439px) {
-            img.glyphicon.glyphicon-chevron-lef {
-                position: absolute;
-                left: 10px;
-                top: 35%;
-            }
-            img.glyphicon.glyphicon-chevron-right {
-                position: absolute;
-                top: 35%;
-                right: 10px;
-            }
-            .carousel-control {}
-        }
-        
         @media screen and (min-width:1440px) and (max-width:1700px) {
             img.glyphicon.glyphicon-chevron-lef {
                 position: absolute;
-                left: 10px;
+                left: 20px;
                 top: 35%;
             }
             img.glyphicon.glyphicon-chevron-right {
                 position: absolute;
                 top: 35%;
-                right: 10px;
+                right: 20px;
             }
             .carousel-control {}
         }
         
         @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .item .tab-slider-single-slide-wrapper .third-slide-wrapper .tab-slider-img-div img {
+                width: 28%;
+            }
+            .item .tab-slider-single-slide-wrapper .second-slide-wrapper .tab-slider-img-div img {
+                width: 65% !important;
+            }
             .tab-slider-slides-wrapper .tab-slider-content-div .tab-slider-content-div-head {
                 font-size: 2.5rem !important;
                 font-weight: 800;
@@ -604,7 +596,10 @@
             }
             img.glyphicon.glyphicon-chevron-lef,
             img.glyphicon.glyphicon-chevron-right {
-                width: 20px;
+                width: 15px;
+            }
+            #custom_carousel .controls li .text-center {
+                font-size: 12px;
             }
             .carousel-control {}
             img.glyphicon.glyphicon-chevron-right {
@@ -628,15 +623,15 @@
             }
             .carousel-control {}
             img.glyphicon.glyphicon-chevron-right {
-                width: 25px;
+                width: 20px;
                 position: absolute;
                 top: 35%;
-                right: 10px;
+                right: 7%;
             }
             img.glyphicon.glyphicon-chevron-lef {
-                width: 25px;
+                width: 20px;
                 position: absolute;
-                left: 10px;
+                left: 7%;
                 top: 35%;
             }
             #custom_carousel .controls li {
@@ -697,15 +692,15 @@
             }
             .carousel-control {}
             img.glyphicon.glyphicon-chevron-right {
-                width: 25px;
+                width: 20px;
                 position: absolute;
                 top: 35%;
-                right: 10px;
+                right: 4%;
             }
             img.glyphicon.glyphicon-chevron-lef {
-                width: 25px;
+                width: 20px;
                 position: absolute;
-                left: 10px;
+                left: 4%;
                 top: 35%;
             }
         }
@@ -862,13 +857,13 @@
             }
             img.glyphicon.glyphicon-chevron-right {
                 margin-right: 0px;
-                width: 25px;
+                width: 20px;
                 position: absolute;
                 top: 35%;
                 right: 10px;
             }
             img.glyphicon.glyphicon-chevron-lef {
-                width: 25px;
+                width: 20px;
                 position: absolute;
                 left: 10px;
                 top: 35%;
@@ -929,6 +924,9 @@
             .tab-slider-img-div img {
                 height: auto !important;
             }
+            #custom_carousel .controls li .text-center {
+                font-size: 14px;
+            }
         }
         
         @media screen and (max-width:320px) {
@@ -951,16 +949,19 @@
             }
             img.glyphicon.glyphicon-chevron-right {
                 margin-right: 0px;
-                width: 25px;
+                width: 17px;
                 position: absolute;
                 top: 35%;
                 right: 10px;
             }
             img.glyphicon.glyphicon-chevron-lef {
-                width: 25px;
+                width: 17px;
                 position: absolute;
                 left: 10px;
                 top: 35%;
+            }
+            #custom_carousel .controls li .text-center {
+                font-size: 12px;
             }
             .carousel-control {}
             #custom_carousel .item,
@@ -1049,6 +1050,9 @@
         @media screen and (min-width:320px) and (max-width:769px) {
             ul.tabs-nav li {
                 border-right: none !important;
+            }
+            .tab-slider-slides-wrapper.first-slide-wrapper {
+                padding-top: 15px;
             }
         }
         /*v2page styling started */
@@ -1269,7 +1273,9 @@
         .tab-slider-content-div.first-slide.gradient-border {
             max-height: 360px;
             max-width: 1246px;
-            width: 100%;
+            width: 95%;
+            /*  margin: 0px auto !important;
+            */
         }
         
         .tab-slider-content-div.second-slide.gradient-border {
@@ -1375,10 +1381,11 @@
                 /* padding-bottom: 0px; */
                 margin-top: 20px !important;
                 margin-bottom: 20px !important;
+                margin: 0px auto !important;
             }
             #custom_carousel .controls {
                 max-height: 80px;
-                margin-top: -85px;
+                margin-top: -130px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1466,6 +1473,7 @@
                 padding: 10px 35px 3px 35px;
                 align-items: center;
                 text-align: center;
+                margin: 0px auto !important;
             }
             .tab-slider-content-div.third-slide.gradient-border {
                 align-items: center;
@@ -1477,11 +1485,97 @@
             .tab-slider-content-div.second-slide p.tab-slider-content-div-para {
                 margin: 0px auto;
             }
+            .item .tab-slider-single-slide-wrapper .forth-slide-wrapper .tab-slider-img-div img {
+                width: 55% !important;
+            }
+        }
+        
+        @media (min-width: 1440px) and (max-width: 1550px) {
+            #custom_carousel .controls li .text-center {
+                font-size: 13px;
+            }
+            img.glyphicon.glyphicon-chevron-right {
+                width: 20px;
+            }
+            img.glyphicon.glyphicon-chevron-lef {
+                width: 20px;
+            }
+        }
+        
+        @media (min-width: 1025px) and (max-width: 1100px) {
+            #custom_carousel .controls li .text-center {
+                font-size: 12px;
+            }
+            img.glyphicon.glyphicon-chevron-right {
+                width: 15px;
+                right: 15px;
+            }
+            img.glyphicon.glyphicon-chevron-lef {
+                width: 15px;
+                left: 15px;
+            }
+        }
+        
+        @media (min-width: 1101px) and (max-width: 1439px) {
+            #custom_carousel .controls li .text-center {
+                font-size: 13px;
+            }
+            img.glyphicon.glyphicon-chevron-right {
+                width: 15px;
+                right: 20px;
+            }
+            img.glyphicon.glyphicon-chevron-lef {
+                width: 15px;
+                left: 20px;
+            }
+        }
+        /*  
+        @media screen and (min-width:1250px) and (max-width:1439px) {
+            img.glyphicon.glyphicon-chevron-lef {
+                position: absolute;
+                left: 10px;
+                top: 35%;
+            }
+            img.glyphicon.glyphicon-chevron-right {
+                position: absolute;
+                top: 35%;
+                right: 10px;
+            }
+            .carousel-control {}
+        }*/
+        
+        @media (max-width: 767px) {
+            .tab-slider-single-slide-wrapper.first-slide-bg-img .tab-slider-slides-wrapper.first-slide-wrapper .tab-slider-img-div {
+                position: relative;
+                height: 250px;
+                /* Adjust height based on your layout */
+            }
+            .tab-slider-single-slide-wrapper.first-slide-bg-img .tab-slider-slides-wrapper.first-slide-wrapper .tab-slider-img-div img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 90%;
+                height: auto;
+            }
+            .tab-slider-single-slide-wrapper.second-slide-bg-img .tab-slider-slides-wrapper.second-slide-wrapper .tab-slider-img-div {
+                position: relative;
+                height: 250px;
+                /* Adjust height based on your layout */
+            }
+            .tab-slider-single-slide-wrapper.second-slide-bg-img .tab-slider-slides-wrapper.second-slide-wrapper .tab-slider-img-div img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 90%;
+                height: auto;
+            }
+        }
+        
+        @media (width: 768px) {
             .item .tab-slider-single-slide-wrapper .third-slide-wrapper .tab-slider-img-div img {
                 width: 40%;
-            }
-            .item .tab-slider-single-slide-wrapper .forth-slide-wrapper .tab-slider-img-div img {
-                width: 80% !important;
             }
         }
     </style>
